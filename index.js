@@ -48,7 +48,7 @@ client.on("message", message => {
  client.on("message", message => {
 
    if(message.content.startsWith("sf!ping")){
-    message.channel.send(":ping_pong: Pong! \n\n" +Math.round(client.ping)+"`ms`");
+    message.channel.send(`Pong! :ping_pong: O seu ping é ${m.createdTimestamp - message.createdTimestamp}ms.`);
    }
 
  });
