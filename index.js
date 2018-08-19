@@ -3,7 +3,7 @@ const config = require('./config.json');
 
 const client = new Discord.Client();
 client.prefix = config.prefix;
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);
 
 client.on("ready", () => {
 console.log("Bot iniciado! \n Dê sf!ajuda para ter nossa ajuda. :)");
